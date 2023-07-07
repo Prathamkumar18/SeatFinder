@@ -115,9 +115,9 @@ class _SeatFinderScreenState extends State<SeatFinderScreen> {
                           flag: 1);
                       String birthType = s.getBerthType(searchedSeat);
                       showSnackBar(context,
-                          "Hey! you have been alloted ${birthType} birth.");
+                          "Hey! you have been alloted ${birthType} birth.", 1);
                     } else {
-                      showSnackBar(context, "Please enter a valid seat no.");
+                      showSnackBar(context, "Please enter a valid seat no.", 0);
                     }
                   },
                   child: Container(
